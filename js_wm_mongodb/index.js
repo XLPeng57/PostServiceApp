@@ -44,8 +44,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 var MongoClient = mongodb.MongoClient;
 
 //conneciton
-//var url = 'mongodb://localhost:27017'
-var url = 'mongodb+srv://xlpeng:0507@cluster0.wbeif.mongodb.net/wminfo?retryWrites=true&w=majority'
+var url = 'mongodb://localhost:27017'
 
 MongoClient.connect(url,{useNewUrlParser:true},function(err,client){
     if (err)
