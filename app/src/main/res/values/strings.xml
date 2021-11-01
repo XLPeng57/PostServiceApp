@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PostServiceApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="menu_text_positive_1">Good News</string>
+    <string name="menu_text_positive_2">Your packages are waiting for you</string>
+    <string name="menu_text_negative_1">No packages</string>
+    <string name="menu_text_negative_2">When they arrive, you can select them from this menu</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

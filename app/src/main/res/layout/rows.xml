@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/TABLE">
+    <TextView
+        android:id="@+id/pkg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Package 0001"
+        android:textColor="@color/black"
+        android:padding="10sp"
+        android:textSize="14sp"
+        android:layout_weight="4"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Small"
+        android:textColor="@color/black"
+        android:padding="10sp"
+        android:textSize="14sp"
+        android:layout_weight="4"
+        android:layout_gravity="center_horizontal"
+        />
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="30dp"
+        android:textColor="@color/black"
+        android:padding="10sp"
+        android:layout_weight="4"
+        android:layout_gravity="center_horizontal"
+        />
+
+</TableRow>

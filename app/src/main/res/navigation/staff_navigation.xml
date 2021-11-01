@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/staff_navigation"
+    app:startDestination="@id/staffHomeFragment">
+
+    <fragment
+        android:id="@+id/staffHomeFragment"
+        android:name="edu.wm.cs.cs425.postserviceapp.staff.StaffHomeFragment"
+        android:label="fragment_staff_home"
+        tools:layout="@layout/fragment_staff_home" >
+        <action
+            android:id="@+id/action_staffHomeFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_staffHomeFragment_to_showScheduleFragment"
+            app:destination="@id/showScheduleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="edu.wm.cs.cs425.postserviceapp.ui.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_staffHomeFragment"
+            app:destination="@id/staffHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showScheduleFragment"
+        android:name="edu.wm.cs.cs425.postserviceapp.staff.ShowScheduleFragment"
+        android:label="fragment_show_schedule"
+        tools:layout="@layout/fragment_show_schedule" >
+        <action
+            android:id="@+id/action_showScheduleFragment_to_staffHomeFragment"
+            app:destination="@id/staffHomeFragment" />
+        <action
+            android:id="@+id/action_showScheduleFragment_to_showPackageDetailFragment"
+            app:destination="@id/showPackageDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/showPackageDetailFragment"
+        android:name="edu.wm.cs.cs425.postserviceapp.staff.ShowPackageDetailFragment"
+        android:label="fragment_show_package_detail"
+        tools:layout="@layout/fragment_package_detail">
+
+        <action
+            android:id="@+id/action_showPackageDetailFragment_back_to_showScheduleFragment"
+            app:destination="@id/showScheduleFragment"/>
+
+    </fragment>
+
+
+</navigation>
